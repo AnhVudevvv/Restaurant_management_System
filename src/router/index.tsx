@@ -14,7 +14,7 @@ export const router = createBrowserRouter([
                 element: <Dashboard />
             },
             {
-                path: "/tablemanagement",
+                path: "/tableManagement",
                 element: <TableManagement />
             }
         ]

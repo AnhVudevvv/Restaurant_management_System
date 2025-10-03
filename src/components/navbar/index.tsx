@@ -9,28 +9,34 @@ const Navbar = () => {
     return (
         <div className="navbar">
             <div className="container">
-                <div className="text-title">ShineWay</div>
-                <div className="search-box">
-                    <img className="search" src={search} alt="" />
-                </div>
-                <div className="user-box" >
-                    <div className="user-img">
-                        <img src={userCirle} alt="" />
+                <div className="left-section" style={{ display: "flex", alignItems: "center" }}>
+                    <div className="text-title">ShineWay</div>
+                    <div className="search-box">
+                        <img className="search" src={search} alt="" />
                     </div>
-                    <div style={{padding:10}}>
-                        <div className="name">Nguyễn Văn A</div>
-                        <div className="b-admin">
-                            <div className="admin-txt">Admin</div>
+                </div>
+
+                <div className="right-section">
+                    <div className="user-box">
+                        <div className="user-img">
+                            <img src={userCirle} alt="" />
+                        </div>
+                        <div>
+                            <div className="name">Nguyễn Văn A</div>
+                            <div className="b-admin">
+                                <div className="admin-txt">Bồi bàn</div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div className="line"></div>
-                <div className="box-menu">
-                    <img className="question" src={question} alt="" />
-                    <img className="bellpin" src={bellpin} alt="" />
-                    <img className="menu" src={menu} alt="" />
+                    <div className="line"></div>
+                    <div className="box-menu">
+                        <img className="question" src={question} alt="" />
+                        <img className="bellpin" src={bellpin} alt="" />
+                        <img className="menu" src={menu} alt="" />
+                    </div>
                 </div>
             </div>
+
         </div>
     )
 }
