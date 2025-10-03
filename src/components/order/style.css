@@ -1,0 +1,491 @@
+.tm-order-card {
+    width        : 100%;
+    background   : #ffffff;
+    border-radius: 16px;
+    padding      : 14px;
+    box-shadow   : 0 6px 20px rgba(0, 0, 0, 0.06);
+    font-family  : "Helvetica Neue", Arial, sans-serif;
+    color        : #222;
+}
+
+/* tiêu đề */
+.tm-order-title {
+    text-align    : center;
+    font-weight   : 700;
+    font-size     : 24px;
+    margin-bottom : 10px;
+    line-height   : 100%;
+    letter-spacing: 0%;
+    color: #222222;
+    font-family: 'inter', sans-serif;
+}
+
+.tm-order-content {
+    background: transparent;
+
+    padding: 20px;
+}
+
+.tm-order-info-box {
+    border       : 1px dashed rgba(0, 0, 0, 0.12);
+    padding      : 12px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    background   : #fff;
+}
+
+.info-row {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    margin         : 3px 0;
+    font-size      : 13px;
+}
+
+.label {
+    color      : #000000;
+    font-weight: 700;
+    /* width      : 110px; */
+    font-family: 'inter', sans-serif;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    width: 124px;
+    height: 17px;
+}
+
+.value {
+    color: #000000;
+    width: 77px;
+    height: 17px;
+    font-family: 'inter', sans-serif;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    font-weight: 400;
+}
+.tm-order-info-left{
+    display: grid;
+    flex-direction: column;
+    gap: 5px;
+}
+/* badge bàn */
+.table-badge {
+    display      : inline-block;
+    background   : #2f8be6;
+    color        : #fff;
+    padding      : 3px 8px;
+    border-radius: 12px;
+    font-weight  : 700;
+    font-size    : 12px;
+}
+
+.tm-order-list {
+    max-height   : 280px;
+    overflow-y   : auto;
+    margin-top   : 10px;
+    padding-right: 6px;
+}
+
+.tm-order-item {
+    display      : flex;
+    align-items  : center;
+    padding      : 10px 4px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+    width: 100%;
+}
+.item-details{
+    width: 50%;
+    /* margin-top: 20px; */
+}
+.item-image {
+    width        : 25%;
+    height       : 52px;
+    border-radius: 10px;
+    object-fit   : cover;
+    margin-right : 10px;
+    flex-shrink  : 0;
+}
+
+.item-meta {
+    flex: 1;
+
+}
+
+.item-name {
+    font-weight: 700;
+    font-size  : 16px;
+    display    : flex;
+    align-items: center;
+    gap        : 8px;
+    min-width: 98px;
+    height: 19px;
+    font-family: 'inter', sans-serif;
+
+}
+
+.small-price {
+    color      : #f08b2d;
+    /* màu cam */
+    font-weight: 700;
+    font-size  : 13px;
+    margin-left: 6px;
+}
+
+.quantity-control {
+    display    : flex;
+    align-items: center;
+    gap        : 8px;
+    margin-left: 8px;
+    margin-top: 10px;
+}
+
+.qty-btn {
+    width          : 28px;
+    height         : 28px;
+    border-radius  : 50%;
+    border         : none;
+    background     : #2f78d6;
+    color          : #fff;
+    font-size      : 16px;
+    line-height    : 1;
+    cursor         : pointer;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    box-shadow     : 0 2px 6px rgba(47, 120, 214, 0.25);
+}
+
+.qty-num {
+    min-width  : 20px;
+    text-align : center;
+    font-weight: 700;
+    color      : #333;
+}
+
+.item-line-total {
+    width: 25%;
+    text-align : right;
+    font-weight: 800;
+    color      : #0088ff;
+    margin-left: 10px;
+    text-align: right;
+}
+
+.tm-order-summary {
+    margin-top   : 12px;
+    padding      : 10px 6px;
+    border-radius: 8px;
+    background   : linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6));
+}
+
+.summary-row {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+    margin         : 6px 0;
+    font-size      : 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    font-weight: 500;
+    font-family: 'inter', sans-serif;
+}
+
+.muted {
+    color: #4b5563;
+}
+
+.discount {
+    color      : #ff4d4d;
+    font-weight: 700;
+}
+
+.total {
+    font-weight: 800;
+}
+
+.total-amount {
+    color      : #2e9b48;
+    font-weight: 900;
+    font-size  : 18px;
+}
+
+.coupon-pill {
+    display      : inline-block;
+    padding      : 4px 8px;
+    border-radius: 8px;
+    border       : 1px solid #e0e0e0;
+    font-weight  : 700;
+    background   : #fff;
+    margin-left  : 8px;
+    font-size    : 13px;
+}
+
+.tm-order-actions {
+    display   : flex;
+    gap       : 10px;
+    margin-top: 12px;
+}
+
+.btn-outline {
+    flex         : 1;
+    padding      : 8px 10px;
+    border-radius: 8px;
+    border       : 2px solid black;
+    background   : #fff;
+    color        : #2f78d6;
+    font-weight  : 800;
+    cursor       : pointer;
+}
+.tm-order-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.btn-green {
+    flex         : 1;
+    padding      : 10px;
+    border-radius: 10px;
+    background   : #2e9b48;
+    color        : #fff;
+    font-weight  : 800;
+    border       : none;
+    cursor       : pointer;
+}
+
+.btn-red {
+    flex         : 1;
+    padding      : 10px;
+    border-radius: 10px;
+    background   : #ff6b60;
+    color        : #fff;
+    font-weight  : 800;
+    border       : none;
+    cursor       : pointer;
+}
+
+.tm-order-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.tm-order-list::-webkit-scrollbar-thumb {
+    background   : rgba(0, 0, 0, 0.08);
+    border-radius: 6px;
+}
+
+.pm-step { padding: 12px 10px; }
+
+.pm-subtitle { margin: 8px 4px; color: #444; font-size: 13px; }
+.pm-row {width: 100%; margin: 8px 4px; display:flex; justify-content:center; gap:8px; align-items:center; }
+
+.pm-select {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #e6e6e6;
+  font-weight: 700;
+  width: 100%;
+  background:#fff;
+}
+
+.pm-qr-box {
+  width: 240px;
+  height: 180px;
+  border-radius: 8px;
+  margin: 10px auto;
+  border: 2px dashed rgba(0,0,0,0.08);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#fafafa;
+}
+.pm-qr-text { color:#9aa0a6; font-weight:700; }
+
+.pm-total-row { display:flex; justify-content:flex-end; gap:10px; align-items:center; margin-right:6px; }
+.pm-total-amount { color:#1e88e5; font-weight:800; }
+
+.pm-center { text-align:center; }
+.muted { color:#6b7280; }
+
+.pm-actions { display:flex; justify-content:center; gap:12px; margin-top:14px; }
+.pm-btn { min-width:100px; padding:8px 12px; border-radius:8px; font-weight:700; cursor:pointer; }
+.pm-btn-outline { background:#fff; border:1.8px solid #2f78d6; color:#2f78d6; }
+.pm-btn-primary { background:#2f78d6; color:#fff; border:none; }
+
+.pm-success-text { color:#2e9b48; font-weight:800; margin-bottom:8px; }
+.pm-fail-text { color:#ff4d4d; font-weight:800; margin-bottom:8px; }
+.pm-icon { display:block; margin:6px auto; }
+
+.tm-order-card {
+    width         : 360px;
+    background    : #fff;
+    border        : 1px solid #e5e7eb;
+    border-radius : 16px;
+    box-shadow    : 0 2px 8px rgba(0, 0, 0, 0.05);
+    padding       : 16px;
+    display       : flex;
+    flex-direction: column;
+    gap           : 12px;
+    font-family   : 'Inter', sans-serif;
+}
+
+.tm-order-title {
+    text-align   : center;
+    font-size    : 20px;
+    font-weight  : 700;
+    color        : #222;
+    margin-bottom: 4px;
+}
+
+.tm-order-info {
+    font-size            : 14px;
+    color                : #333;
+    
+    grid-template-columns: 1fr 1fr;
+    gap                  : 4px 12px;
+}
+
+.tm-order-info>div:last-child {
+    grid-column: 1 / span 2;
+}
+
+/* DANH SÁCH MÓN */
+.tm-order-list {
+    border       : 1px solid #f0f0f0;
+    border-radius: 10px;
+    padding      : 6px 0;
+    max-height   : 200px;
+    overflow-y   : auto;
+}
+
+.tm-order-item {
+    display      : flex;
+    align-items  : center;
+    gap          : 8px;
+    padding      : 6px 10px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.tm-order-item:last-child {
+    border-bottom: none;
+}
+
+.tm-order-item img {
+    width        : 46px;
+    height       : 46px;
+    border-radius: 8px;
+    object-fit   : cover;
+}
+
+.tm-order-item-info {
+    flex: 1;
+}
+
+.tm-order-item-name {
+    font-size  : 14px;
+    font-weight: 600;
+    color      : #222;
+}
+
+.tm-order-item-price {
+    font-size: 13px;
+    color    : #ff2d2d;
+}
+
+/* Số lượng */
+.tm-order-qty {
+    display    : flex;
+    align-items: center;
+    gap        : 6px;
+}
+
+.tm-order-qty-btn {
+    width        : 24px;
+    height       : 24px;
+    border-radius: 50%;
+    border       : none;
+    background   : #0088ff;
+    color        : #fff;
+    font-weight  : 700;
+    cursor       : pointer;
+}
+
+.tm-order-qty-btn:active {
+    background: #006fcc;
+}
+
+.tm-order-item-total {
+    font-weight: 700;
+    color      : #0088ff;
+    min-width  : 70px;
+    text-align : right;
+}
+
+/* TỔNG KẾT */
+.tm-order-summary {
+    border-top    : 1px dashed #bbb;
+    padding-top   : 8px;
+    font-size     : 14px;
+    display       : flex;
+    flex-direction: column;
+    gap           : 4px;
+}
+
+.tm-order-summary-row {
+    display        : flex;
+    justify-content: space-between;
+}
+
+.tm-order-summary-row.discount {
+    color: #ff2d2d;
+}
+
+.tm-order-summary-row.total {
+    font-size  : 18px;
+    font-weight: 700;
+    color      : #43a047;
+    font-family: 'inter', sans-serif;
+}
+
+.tm-order-summary-row.payment {
+    color: #444;
+}
+
+/* ACTION BUTTONS */
+.tm-order-actions {
+    display        : flex;
+    justify-content: space-between;
+    gap            : 8px;
+    margin-top     : 8px;
+}
+
+.tm-order-actions button {
+    flex         : 1;
+    border-radius: 8px;
+    padding      : 8px 0;
+    font-size    : 15px;
+    font-weight  : 700;
+    border       : none;
+    cursor       : pointer;
+}
+
+.tm-order-actions .save {
+    background: #fff;
+    color     : #43a047;
+    border    : 2px solid #43a047;
+}
+
+.tm-order-actions .cancel {
+    background: #fff;
+    color     : #ff2d2d;
+    border    : 2px solid #ff2d2d;
+}
+
+.tm-order-actions .export {
+    background: #43a047;
+    color     : #fff;
+}
+
+.tm-order-actions .pay {
+    background: #ff2d2d;
+    color     : #fff;
+}

@@ -1,7 +1,7 @@
 // TypeScript interface for table status
 export interface TableStatus {
-    id: number;
-    name: string;
+    id?: number;
+    name?: string;
     status: 'free' | 'using' | 'reserved';
 }
 // Fake data for 30 tables with random status

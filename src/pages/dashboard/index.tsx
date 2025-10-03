@@ -1,5 +1,5 @@
 import React from "react";
-import "./index.css"
+import "./style.css"
 import expandDown from "../../assets/images/Expand_down.png"
 import dateToDay from "../../assets/images/Date_today.png"
 import bieuDo from "../../assets/images/Rectangle 4737.png"
@@ -28,7 +28,7 @@ const Dashboard = () => {
         <div className="container1">
 
             <div className="p">
-                <span className="span-dashboard" >ShineWay</span> - Hệ thống hỗ trợ vận hành nhà hàng
+                <span className="span-dashboard" >ShineWay</span > - Hệ thống hỗ trợ vận hành nhà hàng
             </div>
             <div className="large-box">
                 <div>

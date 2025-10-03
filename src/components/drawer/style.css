@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800;900&display=swap');
+
+.search-drawer-antd .ant-drawer-body {
+  padding: 0;
+}
+
+.search-drawer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  font-family: "Inter", sans-serif;
+  color: #222;
+}
+
+.sd-header {
+  padding: 18px 18px 10px 18px;
+  border-bottom: 1px solid rgba(0,0,0,0.04);
+}
+.sd-title {
+  margin: 0 0 12px 0;
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.sd-search-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.sd-input-wrap {
+  display:flex;
+  align-items:center;
+  gap:8px;
+  flex:1;
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.08);
+  padding: 6px 10px;
+  border-radius: 18px;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.02);
+}
+.sd-search-icon { font-size: 14px; color: #7b8794; }
+.sd-search-input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 14px;
+  padding: 6px 0;
+  /* sử dụng font Inter */
+  font-family: "Inter", sans-serif;
+}
+
+.sd-filters {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap: 10px;
+  margin-top: 6px;
+}
+.sd-date-btn {
+  background: #fff;
+  border: 1px solid rgba(0,0,0,0.08);
+  padding: 6px 10px;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.02);
+}
+
+.sd-time-badges { display:flex; gap:8px; align-items:center; }
+.sd-time-badge {
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-weight: 800;
+  color: #fff;
+  min-width: 82px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+}
+.sd-time-badge--orange { background: #ffb040; }
+.sd-time-badge--red { background: #ff4d4d; }
+
+.sd-body {
+  padding: 12px 16px;
+  flex: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.sd-section-title {
+  font-weight: 800;
+  color: #444;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.sd-list {
+  overflow-y: auto;
+  padding-right: 6px;
+  display:flex;
+  flex-direction:column;
+  gap: 10px;
+}
+
+.sd-list::-webkit-scrollbar { width:8px; }
+.sd-list::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.06); border-radius:6px; }
+
+.sd-order-card {
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid rgba(0,0,0,0.06);
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.02);
+}
+
+.sd-order-left { display:flex; flex-direction:column; gap:6px; min-width: 0; }
+.sd-order-top {
+  display:flex;
+  align-items:center;
+  gap:8px;
+  flex-wrap:wrap;
+}
+.sd-order-id {
+  font-weight: 800;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+}
+.sd-order-badge {
+  background: #2f78d6;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 12px;
+  font-family: "Inter", sans-serif;
+}
+.sd-order-date { margin-left:auto; color:#666; font-size:12px; font-family: "Inter", sans-serif; }
+
+.sd-order-time { color:#666; font-size:12px; font-family: "Inter", sans-serif; }
+
+.sd-order-right {
+  display:flex;
+  flex-direction:column;
+  align-items:flex-end;
+  gap:8px;
+  margin-left: 8px;
+  min-width: 90px;
+}
+.sd-paid-icon {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #2e9b48;
+  color: #fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight: 700;
+  font-size: 12px;
+  font-family: "Inter", sans-serif;
+}
+
+/* price */
+.sd-order-price {
+  color: #1e88e5;
+  font-weight: 800;
+  font-size: 14px;
+  font-family: "Inter", sans-serif;
+}
+
+
+@media (max-width: 420px) {
+  .search-drawer { font-size: 14px; }
+  .sd-order-right { min-width: 72px; }
+}

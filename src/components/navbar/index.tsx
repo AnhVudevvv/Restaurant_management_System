@@ -5,7 +5,12 @@ import userCirle from "../../assets/images/User_cicrle.png"
 import question from "../../assets/images/Question.png"
 import bellpin from "../../assets/images/Bell_pin.png"
 import menu from "../../assets/images/Menu.png"
+import { useLocation } from "react-router-dom";
 const Navbar = () => {
+    const location = useLocation();
+  const path = location.pathname; 
+
+  const roleLabel = path.startsWith("/tableManagement") ? "Bồi bàn" : "Admin";
     return (
         <div className="navbar">
             <div className="container">
@@ -24,7 +29,7 @@ const Navbar = () => {
                         <div>
                             <div className="name">Nguyễn Văn A</div>
                             <div className="b-admin">
-                                <div className="admin-txt">Bồi bàn</div>
+                                <div className="admin-txt">{roleLabel}</div>
                             </div>
                         </div>
                     </div>

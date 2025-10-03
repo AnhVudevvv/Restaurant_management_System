@@ -9,20 +9,21 @@
 
 .container {
     display        : flex;
-    justify-content: space-between; /* Tách trái và phải */
+    justify-content: space-between; 
     align-items    : center;
     width          : 100%;
-    padding        : 0 40px; /* căn lề trái phải */
+    padding        : 0 40px; 
 }
 
 /* ---- LEFT ---- */
 .text-title {
     font-family   : 'inter', sans-serif;
-    font-weight   : 700;
-    font-size     : 36px;
+    font-weight   : 700; 
     line-height   : 100%;
     color         : #0088ff;
     margin-right  : 30px;
+    font-size: 36px;
+    letter-spacing: 0%;
 }
 
 .search-box {
@@ -81,7 +82,6 @@
     color      : #ffffff;
 }
 
-/* line ngăn cách */
 .line {
     height     : 64px;
     border-left: 1px solid #cfcfcf;
