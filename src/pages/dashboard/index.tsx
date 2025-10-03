@@ -15,7 +15,7 @@ import chatFill from "../../assets/images/Chat_fill.png"
 import horizontal from "../../assets/images/Horizontal_down_left_main.png"
 import expandDownDouble from "../../assets/images/Expand_down_double.png"
 import { useNavigate } from "react-router-dom";
-
+import LineComparison from "../../components/chart"
 
 const Dashboard = () => {
 
@@ -45,7 +45,8 @@ const Dashboard = () => {
                                 <div style={{ width: 107, height: 15, font: "inter", fontWeight: 700, fontSize: 12, lineHeight: "100%", letterSpacing: "0%" }}>Ngày: <span style={{ color: "#0088ff" }}>10/08/2025</span></div>
                                 <div style={{ width: 173, height: 15, font: "inter", fontWeight: 700, fontSize: 12, lineHeight: "100%", letterSpacing: "0%" }}>Nhập kho: <span style={{ color: "red" }}>1.090.000đ</span></div>
                                 <div style={{ width: 173, height: 15, font: "inter", fontWeight: 700, fontSize: 12, lineHeight: "100%", letterSpacing: "0%" }}>Xuất kho: <span style={{ color: "green" }}>520.000đ</span></div>
-                                <img style={{ margin: 20 }} src={bieuDo} alt="" />
+                                {/* <img style={{ margin: 20 }} src={bieuDo} alt="" /> */}
+                                <LineComparison />
                             </div>
                         </div>
                         <div className="text-box">Chi tiết

@@ -288,7 +288,7 @@ const Order = ({ selectedTable, menuItems }: InvoiceProps) => {
                     <button onClick={() => setIsModalOpen(true)} className="btn-red">Thanh Toán</button>
                     <div>
                         <Modal
-                            title={step === 0 ? "Thanh toan don hang" : "Thanh toan"}
+                            title={step === 0 ? "Thanh toán đơn hàng" : "Thanh toán"}
                             open={isModalOpen}
                             closeIcon={true}
                             footer={null}
